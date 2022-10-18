@@ -11,17 +11,17 @@ class DataBase
     protected $password;
     protected $databasename;
 
-    public function __construct()
-    {
-        $this->connect = null;
-        $this->data = null;
-        $this->sql = null;
-        $dbc = new DataBaseConfig();
-        $this->servername = $dbc->servername;
-        $this->username = $dbc->username;
-        $this->password = $dbc->password;
-        $this->databasename = $dbc->databasename;
-    }
+//     public function __construct()
+//     {
+//         $this->connect = null;
+//         $this->data = null;
+//         $this->sql = null;
+//         $dbc = new DataBaseConfig();
+//         $this->servername = $dbc->servername;
+//         $this->username = $dbc->username;
+//         $this->password = $dbc->password;
+//         $this->databasename = $dbc->databasename;
+//     }
 
     function dbConnect()
     {

@@ -1,7 +1,7 @@
 <?php
 require "DataBase.php";
 $db = new DataBase();
-if (isset($_POST['username']) && isset($_POST['password'])) {
+if (isset($_GET['username']) && isset($_GET['password'])) {
     if ($db->dbConnect()) {
         if ($db->logIn("users", $_POST['username'], $_POST['password'])) {
             echo "Login Success";
